@@ -147,8 +147,20 @@ class HomeScreen extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                       ),
                     ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "See All",
+                      style: TextStyle(
+                        color: Color(0xFFFF2F08),
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  )
                   ],
-                )),
+              ),
+            ),
           ],
         ),
       ),
