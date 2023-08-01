@@ -161,6 +161,43 @@ class HomeScreen extends StatelessWidget {
                   ],
               ),
             ),
+            SizedBox(
+              height: 120,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                shrinkWrap: true,
+                itemCount: foods.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 100,
+                    margin: EdgeInsets.only(left: 15),
+                    padding: EdgeInsets.symmetric(vertical: 5),
+                    decoration: BoxDecoration(
+                      color: bgColors[index],
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Image.asset(
+                          "images/${foods[index]}.png",
+                          height: 80,
+                          width: 80,
+                        ),
+                        Text(
+                          foods[index],
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
+                            color: Colors.black54,
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
