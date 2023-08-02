@@ -279,6 +279,23 @@ class HomeScreen extends StatelessWidget {
                                       ),
                                     ),
                                     SizedBox(height: 5),
+                                    Text(
+                                      "Fast Food",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        color: Colors.black45,
+                                      ),
+                                    ),
+                                    SizedBox(height: 5),
+                                    Row(
+                                      children: [
+                                        Icon(
+                                          Icons.star,
+                                          color: Color(0XFFFF2F08),
+                                          size: 20,
+                                        ),
+                                      ],
+                                    )
                                   ],
                                 ),
                               ],
@@ -291,7 +308,7 @@ class HomeScreen extends StatelessWidget {
                 },
               ),
             ),
-            SizedBox(height: 50)
+         
           ],
         ),
       ),
