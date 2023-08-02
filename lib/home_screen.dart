@@ -294,13 +294,73 @@ class HomeScreen extends StatelessWidget {
                                           color: Color(0XFFFF2F08),
                                           size: 20,
                                         ),
+                                        SizedBox(width: 2),
+                                        Text(
+                                          "4.7",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(width: 5),
+                                        Text(
+                                          "(941 Ratings)",
+                                          style: TextStyle(
+                                            color: Colors.black45,
+                                          ),
+                                        ),
                                       ],
                                     )
+                                  ],
+                                ),
+                                Column(
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.all(8),
+                                      child: Row(
+                                        children: [
+                                          Icon(
+                                            Icons.location_on,
+                                            color: Color(0XFFFF2F08),
+                                            size: 20,
+                                          ),
+                                          SizedBox(
+                                            width: 20,
+                                          ),
+                                          SizedBox(width: 2),
+                                          Text(
+                                            "1KM",
+                                            style: TextStyle(
+                                              color: Colors.black45,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Container(
+                                        padding: EdgeInsets.all(6.0),
+                                        decoration: BoxDecoration(
+                                            color: Color(0xFFFF2F08),
+                                            borderRadius: BorderRadius.only(
+                                              topRight: Radius.circular(17),
+                                            )),
+                                        child: Text(
+                                          "\$15.90",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white,
+                                          ),
+                                        )),
                                   ],
                                 ),
                               ],
                             ),
                           ),
+      
                         ],
                       ),
                     ),
@@ -308,7 +368,7 @@ class HomeScreen extends StatelessWidget {
                 },
               ),
             ),
-         
+            SizedBox(width: 50),
           ],
         ),
       ),
