@@ -76,8 +76,37 @@ class ItemScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
-                  children: [],
-                )
+                  children: [
+                    Column(
+                      children: [
+                        Text(
+                          "Calories",
+                          style: TextStyle(
+                            fontSize: 17,
+                            color: Colors.black45,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "120",
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
+                    ),
+                    Container(
+                      height: 30,
+                      width: 2,
+                      color: Colors.black38,
+                    ),
+                  ],
+                ),
+                
               ],
             ),
           ],
