@@ -53,10 +53,32 @@ class ItemScreen extends StatelessWidget {
             SizedBox(height: 8),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              // Icon(
-              //   Icons.Star,
-              //   color: Color(0xFFF2F08),
-              // ),
+              children: [
+                Icon(
+                  Icons.star_border,
+                  color: Color(0xFFF2F08),
+                ),
+                SizedBox(width: 2),
+                Text(
+                  "4,7",
+                  style: TextStyle(
+                    color: Colors.black45,
+                    fontSize: 16,
+                  ),
+                ),
+              ],
+            ),
+            Padding(
+              padding: EdgeInsets.all(25),
+              child: Image.asset("images/Pizza.png"),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  children: [],
+                )
+              ],
             ),
           ],
         ),
